@@ -1,0 +1,21 @@
+Spice Updating the repo
+
+Step 1) Checking the repo you're in 
+pwd
+
+Step 2)If you're interested to see the changes made in the repo
+git log --graph --oneline
+
+Step 3) To check the origin of the online repo
+git remote show origin
+
+Step 4)Save your changes before the reset command
+git stash
+
+Step 5)RESET the repo otherwise pull will give error
+git reset --soft
+
+Step 6)Updating the repo
+git pull https://s2e2.cosmos.esa.int/bitbucket/scm/spice_kernels/bepicolombo.git
+
+After updating the repo, go to mk kernels and add the file address with backslash to bc_ops and bc_plan files and add the correct address in spice_ops_BEPIC.json ,spice_plan_BEPIC.json files 
